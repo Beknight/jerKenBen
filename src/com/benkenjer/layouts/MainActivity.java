@@ -1,4 +1,6 @@
-package com.example.benkenjer;
+package com.benkenjer.layouts;
+
+import com.example.benkenjer.R;
 
 import android.os.Bundle;
 import android.app.Activity;
