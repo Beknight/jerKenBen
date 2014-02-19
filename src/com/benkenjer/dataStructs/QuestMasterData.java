@@ -9,17 +9,17 @@ import java.util.LinkedList;
  * @author Benjamin
  * 
  */
-public class QuestMaster {
-	private LinkedList<QuestItem> questList;
+public class QuestMasterData {
+	private LinkedList<QuestItemData> questList;
 
-	public QuestMaster() {
+	public QuestMasterData() {
 		// load the database?
 
 	}
 
 	private void readFromDataBase() {
 		// read from the database and get the full aggregate of information that
-		// is requuired to build the list
+		// is required to build the list
 	}
 
 	private void createQuest() {
@@ -34,8 +34,8 @@ public class QuestMaster {
 	 *            the index of the item on the list
 	 * 
 	 */
-	public QuestItem getQuest(int index) {
-		QuestItem retItem = null;
+	public QuestItemData getQuest(int index) {
+		QuestItemData retItem = null;
 		if ((questList.size() - 1) >= index) {
 			retItem = questList.get(index);
 		} else {
@@ -54,7 +54,7 @@ public class QuestMaster {
 	 * @return will return 1 if the quest is successfully made, else will return
 	 *         0
 	 */
-	public int editQuest(int index, QuestItem replacement) {
+	public int editQuest(int index, QuestItemData replacement) {
 		int success = 0;
 		if ((questList.size() - 1) >= index) {
 			questList.set(index, replacement);
@@ -69,5 +69,6 @@ public class QuestMaster {
 		// push the linked list to the database
 		 
 		//thereby committing the changes to the phone memory
+		
 	}
 }

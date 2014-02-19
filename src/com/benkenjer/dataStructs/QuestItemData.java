@@ -2,14 +2,14 @@ package com.benkenjer.dataStructs;
 
 import java.util.LinkedList;
 
-public class QuestItem {
+public class QuestItemData {
 
 	private String name;
 	private long createTime;
 	private long deadLine;
 	private LinkedList<String> objectiveList;
 
-	public QuestItem(String name, long createTime, long deadLine,
+	public QuestItemData(String name, long createTime, long deadLine,
 			LinkedList<String> objectiveList) {
 		this.name = name;
 		this.createTime = createTime;
@@ -32,5 +32,5 @@ public class QuestItem {
 	public LinkedList<String> getObjectiveList(){
 		return objectiveList;
 	}
-	
+
 }
