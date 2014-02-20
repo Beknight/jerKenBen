@@ -20,7 +20,7 @@ public class QuestItemData {
 	public String getName(){
 		return name;
 	}
-	
+
 	public long getStartTime(){
 		return createTime;
 	}
