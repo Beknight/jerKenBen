@@ -1,9 +1,7 @@
 package com.benkenjer.layouts;
 
-import com.example.benkenjer.R;
-
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
 
 public class MainScreen extends Activity {
