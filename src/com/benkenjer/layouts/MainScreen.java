@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 
+import com.example.benkenjer.R;
+
 public class MainScreen extends Activity {
 
     @Override
